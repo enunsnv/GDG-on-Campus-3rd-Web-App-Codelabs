@@ -57,4 +57,5 @@ function initializeAutofillTracking() {
   });
 }
 
+console.log('Autofill tracking initialized.');
 document.addEventListener('DOMContentLoaded', initializeAutofillTracking);
