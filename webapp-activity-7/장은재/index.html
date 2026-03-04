@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>GA4 Autofill Test</title>
+
+  <!-- GA4 태그 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZRLRTZWBZ6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZRLRTZWBZ6', { debug_mode: true });
+  </script>
+</head>
+<body>
+
+  <h1>Autofill Test</h1>
+
+  <form id="myForm" data-form-id="myForm">
+    <input id="name" name="name" autocomplete="name" placeholder="Name"><br><br>
+    <input id="email" name="email" autocomplete="email" placeholder="Email"><br><br>
+    <input id="address" name="address" autocomplete="street-address" placeholder="Address"><br><br>
+    <input id="city" name="city" autocomplete="address-level2" placeholder="City"><br><br>
+    <input id="zip" name="zip" autocomplete="postal-code" placeholder="Zip"><br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="autofill_tracker.js"></script>
+
+</body>
+</html>
